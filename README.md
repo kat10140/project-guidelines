@@ -1,8 +1,5 @@
 
-[<img src="./images/logo.png">](http://wearehive.co.uk/)
-
-
-# Project Guidelines &middot; [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+# Project Guidelines
 > While developing a new project is like rolling on a green field for you, maintaining it is a potential dark twisted nightmare for someone else.
 Here's a list of guidelines we've found, written and gathered that (we think) works really well with most JavaScript projects here at [hive](http://wearehive.co.uk).
 If you want to share a best practice, or think one of these guidelines  should be removed, [feel free to share it with us](http://makeapullrequest.com).
@@ -17,7 +14,7 @@ If you want to share a best practice, or think one of these guidelines  should b
 - [API Design](#api-design)
 - [Licensing](#licensing)
 
-## 1. Git <a name="git"></a>
+## 1. Git
 ### 1.1 Some Git Rules
 There are a set of rules to keep in mind:
 * Perform work in a feature branch.
@@ -128,7 +125,7 @@ that's useful for a code reviewer. if you can link to an associated Jira ticket,
  * Wrap the body at 72 characters
  * Use the body to explain **what** and **why** as opposed to **how**
 
-## 2. Documentation <a name="documentation"></a>
+## 2. Documentation 
 * Use this [template](./README.sample.md) for `README.md`, Feel free to add uncovered sections.
 * For projects with more than one repository, provide links to them in their respective `README.md` files.
 * Keep `README.md` updated as project evolves.
@@ -138,7 +135,7 @@ that's useful for a code reviewer. if you can link to an associated Jira ticket,
 * Don't use clean code as an excuse to not comment at all.
 * Keep comments relevant as your code evolves.
 
-## 3. Environments<a name="environments"></a>
+## 3. Environments
 * Depending on project size, define separate `development`, `test` and `production` environments.
 
     _why:_
@@ -185,7 +182,7 @@ that's useful for a code reviewer. if you can link to an associated Jira ticket,
     _why:_
     > Lets you share your tooling with your colleague instead of expecting them to have it on their systems.
 
-## 4. Dependencies <a name="dependencies"></a>
+## 4. Dependencies 
 Before using a package, check its GitHub. Look for the number of open issues, daily downloads and number of contributors as well as the date the package was last updated.
 
 * If less known dependency is needed, discuss it with the team before using it.
@@ -230,7 +227,7 @@ Before using a package, check its GitHub. Look for the number of open issues, da
     > Too bad. For older versions of `npm`, use `—save --save-exact` when installing a new dependency and create `npm-shrinkwrap.json` before publishing. [read more...](https://docs.npmjs.com/files/package-locks)
 
 
-## 5. Testing <a name="testing"></a>
+## 5. Testing 
 
 * Have a `test` mode environment if needed.
 
@@ -270,7 +267,7 @@ Before using a package, check its GitHub. Look for the number of open issues, da
      _why:_
     > Other developers or DevOps experts may get desperate to know where these stuff are and how to run them.
 
-## 6. Structure and Naming <a name="structure-and-naming"></a>
+## 6. Structure and Naming 
 * Organize your files around product features / pages / components, not roles. Also, place your test files next to their implementation.
 
 
@@ -336,7 +333,7 @@ Before using a package, check its GitHub. Look for the number of open issues, da
     _why:_
     > Then you can expect what component or module you will receive by simply just importing its parent folder.   
 
-## 7. Code style <a name="code-style"></a>
+## 7. Code style 
 * Use stage-2 and higher JavaScript (modern) syntax for new projects. For old project stay consistent with existing syntax unless you intend to modernise the project.
 
     _why:_
@@ -378,12 +375,12 @@ Before using a package, check its GitHub. Look for the number of open issues, da
 * Make your names search-able with meaningful distinctions avoid shortened names. For functions Use long, descriptive names. A function name should be a verb or a verb phrase, and it needs to communicate its intention.
 * Organize your functions in a file according to the step-down rule. Higher level functions should be on top and lower levels below. It makes it more natural to read the source code.
 
-## 8. Logging <a name="logging"></a>
+## 8. Logging 
 * Avoid client-side console logs in production
 * Produce readable production logging. Ideally use logging libraries to be used in production mode (such as [winston](https://github.com/winstonjs/winston) or
 [node-bunyan](https://github.com/trentm/node-bunyan)).
 
-## 9 API design <a name="api-design"></a>
+## 9 API design 
 Follow resource-oriented design. This has three main factors: resources, collection, and URLs.
 * A resource has data, relationships to other resources, and methods that operate against it
 * A group of resources is called a collection.
@@ -548,7 +545,7 @@ Optional: photo_id=[alphanumeric]
 #### 9.8.1 API design tools
 There are lots of open source tools for good documentation such as [API Blueprint](https://apiblueprint.org/) and [Swagger](https://swagger.io/).
 
-## 10. Licensing <a name="licensing"></a>
+## 10. Licensing 
 Make sure you use resources that you have the rights to use. If you use libraries, remember to look for MIT, Apache or BSD but if you modify them, then take a look into licence details. Copyrighted images and videos may cause legal problems.
 
 
